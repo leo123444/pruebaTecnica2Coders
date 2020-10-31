@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_color"
+    app:srcCompat="@drawable/gradient_color"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageViewAnime"
+        android:layout_width="155dp"
+        android:layout_height="195dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/gradient_color"
+        tools:ignore="MissingConstraints"
+
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="218dp"
+        />
+
+    <ImageButton
+        android:id="@+id/buttonFavourite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+</LinearLayout>
+
+
+
+
+
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/tvDetail"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            android:textAlignment="viewStart"
+            android:textSize="20dp"
+            android:scrollbarSize="30dp"
+            tools:ignore="MissingConstraints,RtlCompat"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="319dp"
+            />
+    </ScrollView>
+
+
+
+</LinearLayout>
